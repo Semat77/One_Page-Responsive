@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <title>Sklep z Kremówkami Pani Krysi</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="burger-menu" onclick="toggleMenu()">
+        &#9776;
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Główna</a></li>
+        <li><a href="#about">O nas</a></li>
+        <li><a href="#product">Produkty</a></li>
+        <li><a href="#pricing">Cennik</a></li>
+        <li><a href="#gallery">Galeria</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="overlay">
+      <h1>Sklep z Kremówkami "u Pani Krysi"</h1>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>O Nas</h2>
+    <p>Kremówki "u Pani Krysi" to miejsce, gdzie znajdziesz najsmaczniejsze wypieki w mieście. Każda kremówka jest przygotowywana z najwyższej jakości składników i z pasją.</p>
+    <p>Nasza historia zaczęła się w 1990 roku i od tego czasu stale się rozwijamy, oferując coraz to nowsze smaki wraz z nowymi pozycjami w menu</p>
+  </section>
+
+  <section id="product">
+    <h2>Nasze Produkty</h2>
+    <div class="product-columns">
+      <p>Nasze kremówki, jak i inne ciastka są zawsze świeże i pyszne. Wykonane z najlepszych składników, idealne na każdą okazję.</p>
+      <p>Oferujemy szeroki wybór smaków i rozmiarów, aby zadowolić każdego klienta. Sprawdź naszą ofertę już dziś!</p>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Cennik</h2>
+    <p>Sprawdź nasze konkurencyjne ceny i wybierz coś dla siebie. Gwarantujemy najlepszy stosunek jakości do ceny.</p>
+    <p>W sprawach przygotowania wypieków na specjalną okazję prośba o kontakt przez formularz na dole</p>
+  </section>
+
+  <section id="gallery">
+    <div class="row">
+      <div class="column">
+        <a href="#"><img src="img/1.jpg" alt="Image 1" class="about-image"></a>
+      </div>
+      <div class="column">
+        <a href="#"><img src="img/2.jpeg" alt="Image 2" class="about-image"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <a href="#"><img src="img/3.jpg" alt="Image 3" class="about-image"></a>
+      </div>
+      <div class="column">
+        <a href="#"><img src="img/4.jpg" alt="Image 4" class="about-image"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontakt z nami</h2>
+    <form action="/submit" method="post">
+      <div>
+        <label for="username">Nazwa użytkownika:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Akceptuję regulamin</label>
+      </div>
+      <div>
+        <button type="submit">Wyślij</button>
+        <button type="reset">Wyczyść formularz</button>
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Sklep z Kremówkami Pani Krysi - Sebastian Matuszczyk</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>
